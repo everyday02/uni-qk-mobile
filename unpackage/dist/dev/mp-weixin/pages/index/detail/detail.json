@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "详情页",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#1890FF",
+  "backgroundColor": "#1890FF",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tui-rate": "/components/thorui/tui-rate/tui-rate",
+    "tui-tag": "/components/thorui/tui-tag/tui-tag",
+    "tui-divider": "/components/thorui/tui-divider/tui-divider",
+    "ci-comment": "/components/bussnise/ci-comment/ci-comment"
+  }
+}

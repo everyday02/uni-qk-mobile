@@ -1,0 +1,176 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarTitleText": "猫宠爱",
+			 "enablePullDownRefresh": false,
+			 "navigationStyle": "custom"
+		}
+	}    ,{
+            "path" : "pages/index/adopt/adopt",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "详情页",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#1890FF",
+				"backgroundColor": "#1890FF",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+	
+				}
+			}
+		}
+        ,{
+            "path" : "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"background": "#F5F6F7"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/mine/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户资料",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/about/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于我们",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/feedback/feedback",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false,
+				"navigationBarTitleText": "账号登录"
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/pwd-retrieve/pwd-retrieve",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "取回密码",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/mine/setting/bind-mobile/bind-mobile",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "绑定手机",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/setting/cutImage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "图像裁剪",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/common/webview/webview",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#000000"
+		// #ifndef MP-WEIXIN
+		,
+		"borderStyle": "#f5f5f5"
+		// #endif
+		// #ifdef MP-WEIXIN
+		,
+		"borderStyle": "black"
+		// #endif
+		,
+		"fontSize": "11px",
+		"iconWidth": "26px",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home_.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/images/tabbar/mine.png",
+				"selectedIconPath": "static/images/tabbar/mine_.png",
+				"text": "我的"
+			}
+	
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "首页",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue",
+			"qk-(.*)": "@/components/qk/qk-$1/qk-$1.vue"
+		}
+	}
+}

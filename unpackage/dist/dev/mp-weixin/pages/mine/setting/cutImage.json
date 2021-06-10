@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "图像裁剪",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "lime-clipper": "/pages/mine/setting/limeClipper/limeClipper"
+  }
+}

@@ -1,0 +1,76 @@
+.padding-mini {
+	padding: 6rpx;
+}
+
+.text-grey2 {
+	color: #b9b9b9;
+}
+
+.bg-grey2 {
+	background-color: #f5f6f7;
+}
+
+.user-select {
+	user-select: text;
+}
+
+.font-16 {
+	font-size: 32rpx;
+}
+
+.pd-10 {
+	padding: 20rpx;
+}
+
+.pd-5 {
+	padding: 10rpx;
+}
+
+.margin-10 {
+	margin: 20rpx;
+}
+
+.pd-top-10 {
+	padding-top: 20rpx;
+}
+
+.pd-right-5 {
+	padding-right: 10rpx;
+}
+
+.mg-right-5 {
+	margin-right: 10rpx;
+}
+
+.relative-top-1 {
+	position: relative;
+	top: 1px;
+}
+
+.pd-15 {
+	padding: 30rpx;
+}
+
+.pd-bottom-0 {
+	padding-bottom: 0px!important;
+}
+
+.pd-top-0 {
+	padding-top: 0px!important;
+}
+
+.cu-avatar.mini {
+	width: 20px;
+	height: 20px;
+	font-size: 1em;
+}
+
+.cu-avatar.xxl {
+	width: 72px;
+	height: 72px;
+	font-size: 2.5em;
+}
+
+.font-13 {
+	font-size: 13px;
+}

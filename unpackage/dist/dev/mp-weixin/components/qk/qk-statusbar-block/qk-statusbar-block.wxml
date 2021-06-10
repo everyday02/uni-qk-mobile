@@ -1,0 +1,1 @@
+<view class="qk-statusbar-block" style="{{'height:'+(statusBarHeight+'px')+';'}}"></view>

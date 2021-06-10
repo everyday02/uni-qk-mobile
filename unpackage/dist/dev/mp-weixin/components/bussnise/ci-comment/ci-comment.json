@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "tui-rate": "/components/thorui/tui-rate/tui-rate"
+  },
+  "component": true
+}

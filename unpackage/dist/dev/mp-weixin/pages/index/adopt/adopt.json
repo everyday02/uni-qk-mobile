@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tui-rate": "/components/thorui/tui-rate/tui-rate",
+    "tui-overflow-hidden": "/components/thorui/tui-overflow-hidden/tui-overflow-hidden",
+    "tui-tag": "/components/thorui/tui-tag/tui-tag"
+  }
+}

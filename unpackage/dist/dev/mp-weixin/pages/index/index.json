@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "猫宠爱",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "qk-statusbar-block": "/components/qk/qk-statusbar-block/qk-statusbar-block",
+    "tui-tab": "/components/thorui/tui-tab/tui-tab",
+    "adopt": "/pages/index/adopt/adopt"
+  }
+}
