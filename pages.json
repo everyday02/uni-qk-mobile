@@ -2,31 +2,11 @@
 	"pages": [{
 		"path": "pages/index/index",
 		"style": {
-			"navigationBarTitleText": "猫宠爱",
+			"navigationBarTitleText": "qk-基础框架",
 			 "enablePullDownRefresh": false,
 			 "navigationStyle": "custom"
 		}
-	}    ,{
-            "path" : "pages/index/adopt/adopt",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/index/detail/detail",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "详情页",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#1890FF",
-				"backgroundColor": "#1890FF",
-                "enablePullDownRefresh": false
-            }
-            
-        },
+	},
 		{
 			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
 			"style": {
@@ -122,6 +102,15 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/app-setting/app-setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "应用设置",
                 "enablePullDownRefresh": false
             }
             

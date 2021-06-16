@@ -78,10 +78,10 @@
 			</view>
 			
 			<tui-list-view class="mine-menu-list" marginTop="15px" unlined="all">
-				<tui-list-cell :arrow="true" @click="handleBuilding">
+				<tui-list-cell :arrow="true" @click="handleAppSetting">
 					<view class="tui-item-box">
 						<view class="menu-icon cuIcon-settings"></view>
-						<view class="tui-list-cell_name">软件设置</view>
+						<view class="tui-list-cell_name">应用设置</view>
 					</view>
 				</tui-list-cell>
 				<tui-list-cell :arrow="true" @click="handleBuilding">
@@ -137,6 +137,11 @@
 				}
 				uni.navigateTo({
 					url: '/pages/mine/setting/setting'
+				})
+			},
+			handleAppSetting () {
+				uni.navigateTo({
+					url: '/pages/mine/app-setting/app-setting'
 				})
 			},
 			handleToAbout () {

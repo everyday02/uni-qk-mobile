@@ -126,8 +126,7 @@
 				})
 			},
 			async pwdLogin () {
-				
-				// 下边是可以登录
+				// 密码登录
 				uniCloud.callFunction({
 					name:'uni-id-cf',
 					data:{
@@ -138,9 +137,8 @@
 						}
 					},
 					success: ({result}) => {
-						console.log(result);
 						if (result.code === 0) {
-							console.info('登录成功！');
+							// console.info('登录成功！');
 							this.loginSuccess(result)
 						} else {
 							uni.showModal({
@@ -150,6 +148,9 @@
 								confirmText: '知道了'
 							});
 						}
+					},
+					complete(){
+						uni.hideLoading();
 					}
 				})
 			},
@@ -166,10 +167,17 @@
 					},
 					success: ({result}) => {
 						this.loginSuccess(result)
+					},
+					complete(){
+						uni.hideLoading();
 					}
 				})
 			},
 			async handleLogin() {
+				uni.showLoading({
+					title: '登录中，请耐心等待',
+					icon: 'none',
+				});
 				if (this.loginType === 'pass') {
 					this.pwdLogin();
 					return false;
@@ -194,7 +202,7 @@
 					}
 				})
 				// console.log('判断需要返回几层',delta);
-				// uni.navigateBack({delta})
+				uni.navigateBack({delta});
 			}
 		}
 	}

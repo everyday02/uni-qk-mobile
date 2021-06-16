@@ -25,9 +25,10 @@
 		methods: {
 			// 初始化应用
 			initApp () {
-				// 监听网络状况
-				this.checkNetwork();
-				
+				// 监听网络
+				uni.onNetworkStatusChange((res) => {
+					this.checkNetwork();
+				});
 				// 初始化应用配置
 				this.initConfig();
 				
@@ -186,10 +187,6 @@
 						}
 					}
 				});	
-				// 监听网络
-				uni.onNetworkStatusChange((res) => {
-					_thiz.checkNetwork();
-				});
 			}
 		}
 	}

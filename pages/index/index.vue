@@ -19,16 +19,16 @@
 				style="flex: 1;" 
 				:duration="300"  >
 				<swiper-item class="swiper-item">
-					推荐内容
+					板块一
 				</swiper-item>
 				<swiper-item class="swiper-item">
-					<adopt :height="swiper_height - 45 - statusBarHeight" />
+					板块二
 				</swiper-item>
 				<swiper-item class="swiper-item">
-					猫舍推荐
+					板块三
 				</swiper-item>
 				<swiper-item class="swiper-item">
-					平台推荐
+					板块四
 				</swiper-item>
 			</swiper>	
 		</view>
@@ -36,26 +36,16 @@
 </template>
 
 <script>
-	import adopt from '@/pages/index/adopt/adopt.vue';
 	export default {
-		components: {
-			adopt	
-		},
 		data() {
 			return {
 				tabIndex: 1,
-				tabNames: ['推荐', '领养', '猫舍', '平台'],
+				tabNames: ['推荐', '模块一', '模块二', '模块三'],
 				statusBarHeight: uni.getSystemInfoSync()['statusBarHeight'],
 				swiper_height: uni.getSystemInfoSync().windowHeight,
 			}
 		},
 		async mounted () {
-			// 使用 uniCloud 访问
-			// let res = await uniCloud.callFunction({
-			//   name: 'chongai-api', // 要调用的云函数名称
-			//   data: { action: 'hello/sayHello' }
-			// })	
-			// console.info(res);
 		},
 		methods: {
 			async ontabtap(e) {
